@@ -52,7 +52,7 @@ const functionRegister = (email, domain) =>
 
 const functionCreateEmail = (email, domain) =>
   new Promise((resolve, reject) => {
-    fetch(`https://generator.email/email-generator`, {
+    fetch(`https://www.fakemailgenerator.net/`, {
       method: "get",
       redirect: "follow",
       headers: {
@@ -81,7 +81,7 @@ const functionCreateEmail = (email, domain) =>
 
 const functionGetMessages = (email, domain) =>
   new Promise((resolve, reject) => {
-    fetch(`https://generator.email/`, {
+    fetch(`https://www.fakemailgenerator.net/`, {
       method: "get",
       headers: {
         accept:
@@ -297,11 +297,11 @@ const domain = [
               " " +
               "Cek sendiri dan tunggu dalam beberapa menit/jam kedepan :" +
               " " +
-              `https://generator.email/${email}`
+              `https://www.fakemailgenerator.net/${email}`
           );
           fs.appendFile(
             "result_url.txt",
-            `https://generator.email/${email} \n`,
+            `https://www.fakemailgenerator.net/${email} \n`,
             "utf-8"
           );
           console.log(
