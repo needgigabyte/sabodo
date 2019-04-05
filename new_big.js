@@ -52,7 +52,7 @@ const functionRegister = (email, domain) =>
 
 const functionCreateEmail = (email, domain) =>
   new Promise((resolve, reject) => {
-    fetch(`https://www.fakemailgenerator.net/`, {
+    fetch(`https://mailgen.biz/`, {
       method: "get",
       redirect: "follow",
       headers: {
@@ -81,7 +81,7 @@ const functionCreateEmail = (email, domain) =>
 
 const functionGetMessages = (email, domain) =>
   new Promise((resolve, reject) => {
-    fetch(`https://www.fakemailgenerator.net/`, {
+    fetch(`https://mailgen.biz/`, {
       method: "get",
       headers: {
         accept:
@@ -219,7 +219,7 @@ const genEmail = length =>
   });
 
 const domain = [
-  "payforclick.org",
+  "mailgen.biz",
   "cloneviptmc1.club",
   "emailtech.info",
   "payforpost.info",
@@ -297,11 +297,11 @@ const domain = [
               " " +
               "Cek sendiri dan tunggu dalam beberapa menit/jam kedepan :" +
               " " +
-              `https://www.fakemailgenerator.net/${email}`
+              `https://mailgen.biz/${email}`
           );
           fs.appendFile(
             "result_url.txt",
-            `https://www.fakemailgenerator.net/${email} \n`,
+            `https://mailgen.biz/${email} \n`,
             "utf-8"
           );
           console.log(
