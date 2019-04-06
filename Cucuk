@@ -9,7 +9,7 @@ const moment = require("moment");
 const rp = require("request-promise");
 
 console.log("#####################");
-console.log("Panggil w Amin Tamvan");
+console.log("FAMILY FRIENDLY");
 console.log("#####################");
 
 console.log("");
@@ -219,17 +219,9 @@ const genEmail = length =>
   });
 
 const domain = [
-  "payforclick.org",
-  "cloneviptmc1.club",
-  "emailtech.info",
-  "payforpost.info",
-  "alonzo1121.club",
-  "mimpaharpur.ga",
-  "coolmail.ooo",
-  "alliancewe.us",
-  "wpower.info",
-  "besttandberg.com",
-  "titaspaharpur5.ml"
+  "shoes-market.cf",
+  "theoverlandtandberg.com",
+  "virginsrus.xyz"
 ];
 (async () => {
   try {
